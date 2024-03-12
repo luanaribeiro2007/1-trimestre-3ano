@@ -101,3 +101,10 @@ body{
     color: var(--verde);
     text-transform: uppercase;
 }
+
+
+.contador{
+    text-align: center;
+    color: lightcoral;
+    font-size: 40px;
+}
