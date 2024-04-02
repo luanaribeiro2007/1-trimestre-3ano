@@ -35,7 +35,7 @@ body{
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--botao-inativo);
+    background-color: rgb(160, 11, 147);
     color: var(--branco);
     display: flex;
     justify-content: center;
@@ -53,30 +53,31 @@ body{
     border-radius: 40px 40px 0 0;
 }
 
-
 .botoes{
     display: block;
 }
+
 @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
     } 
-    .botao:first-child{
-        border-radius: 40px 0 0 0 ;
-    }
-    .botao:last-child{
-        border-radius: 0 40px 0 0 ;
-    }  
-}
 
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom:4px solid salmon;
 }
 
 .abas-textos{
-    background-color: var(--texto-de-fundo);
+    background-color: rgb(211, 10, 230);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -87,14 +88,13 @@ body{
 
 .aba-conteudo{
     display: none;
-
 }
 
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
+    color:rgba(211, 214, 46, 0.897);
 }
-
 
 .aba-conteudo-titulo-secundario{
     text-align: center;
@@ -102,9 +102,25 @@ body{
     text-transform: uppercase;
 }
 
-
 .contador{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
     text-align: center;
-    color: rgb(245, 239, 244);
-    font-size: 40px;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    font-size: 20px;
+    margin: 0;
+    color: tomato;
 }
